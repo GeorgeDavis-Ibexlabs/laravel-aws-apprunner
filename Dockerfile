@@ -41,7 +41,7 @@ RUN apt-get install -y nginx  && \
 WORKDIR /var/www/html
 
 # copy env file
-COPY ./.env.example .env
+COPY ./.env .env
 
 # Install dependencies
 COPY composer.json composer.json
